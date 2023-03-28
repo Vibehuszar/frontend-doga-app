@@ -13,8 +13,10 @@ function Tapasztalat() {
                     <li>Csibeavató, 2021. 08. 31.</li>
                     <li>Karácsonyi bál, 2021. 12. 22.</li>
                     <li>Farsangi mulatság, 2022. 02. 20.</li>
-                    <li>Professzionális bulik</li>
-                    <li>Tanárkarácsony, 2021. 12. 20.</li>
+                </ul>
+                <h1>Professzionális bulik</h1>
+                <ul>
+                <li>Tanárkarácsony, 2021. 12. 20.</li>
                     <li>Ballagás, 2022. 04. 30.</li>
                 </ul>
             </div>
