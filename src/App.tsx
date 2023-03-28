@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
+import Fooldal from './pages/Fooldal';
+import Tapasztalat from './pages/Tapasztalat';
+import Idopont from './pages/Idopont';
+import Layout from './pages/Layout';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element = {<Layout />} />
+        <Route index element = {<Fooldal/>} />
+        <Route path='/tapasztalat' element = { <Tapasztalat/>}/>
+        <Route path="/idopont" element={<Idopont />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
